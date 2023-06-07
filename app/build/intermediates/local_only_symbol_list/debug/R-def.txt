@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+array data_description
+array data_name
+array data_photo
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable danau_toba
+drawable gunung_rinjani
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable kepulauan_derawan
+drawable nusa_dua_bali
+drawable nusa_penida
+drawable pantai_parai_tenggiri
+drawable pura_besakih
+drawable taman_laut_bunaken
+drawable taman_nasional_way_kambas
+id img_gambar
+id rv_list
+id tv_deskripsi
+id tv_judul
+layout activity_main
+layout itemrowadapter
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.Adi
+xml backup_rules
+xml data_extraction_rules
