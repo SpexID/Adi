@@ -3,8 +3,11 @@ package com.example.adi
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +18,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//
+        val satufrag = firstfragment()
+        val duafrag = secondfragment()
+       setfragment(satufrag)
+        findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.home -> setfragment(satufrag)
+                R.id.dua -> setfragment(duafrag)
+            }
+            true
+        }
+        //
 
         rv_list_tour = findViewById(R.id.rv_list)
         rv_list_tour.setHasFixedSize(true)
@@ -22,7 +37,13 @@ class MainActivity : AppCompatActivity() {
         list.addAll(listTours)
         showRecylerview()
     }
-
+    //
+private fun setfragment(fragment: Fragment) =
+    supportFragmentManager.beginTransaction().apply {
+        replace(R.id.frag,fragment)
+        commit()
+    }
+    //
     private val listTours: ArrayList<item>
         get() {
             val dataTitle = resources.getStringArray(R.array.data_name)
@@ -44,4 +65,5 @@ class MainActivity : AppCompatActivity() {
         rv_list_tour.layoutManager = LinearLayoutManager(this)
         rv_list_tour.adapter=itemadapter(list)
     }
+
 }

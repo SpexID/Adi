@@ -2924,6 +2924,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable gunung_rinjani
+drawable ic_action_name
+drawable ic_action_name2
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3113,6 +3115,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3185,6 +3188,7 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
+id dua
 id easeIn
 id easeInOut
 id easeOut
@@ -3214,6 +3218,7 @@ id fixed
 id flip
 id floating
 id forever
+id frag
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3646,6 +3651,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment1
+layout fragment2
 layout itemrowadapter
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3708,6 +3715,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottomnavmenu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
