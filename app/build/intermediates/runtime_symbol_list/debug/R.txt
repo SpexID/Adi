@@ -2939,6 +2939,8 @@ int drawable ic_mtrl_chip_checked_black 0x7f080095
 int drawable ic_mtrl_chip_checked_circle 0x7f080096
 int drawable ic_mtrl_chip_close_circle 0x7f080097
 int drawable ic_search_black_24 0x7f080098
+int drawable iconanimation 0x7f0800ea
+int drawable iconsetting 0x7f0800eb
 int drawable kepulauan_derawan 0x7f080099
 int drawable m3_appbar_background 0x7f08009a
 int drawable m3_avd_hide_password 0x7f08009b
@@ -3088,6 +3090,7 @@ int id action_mode_bar 0x7f090040
 int id action_mode_bar_stub 0x7f090041
 int id action_mode_close_button 0x7f090042
 int id action_text 0x7f090043
+int id actionbarmenu 0x7f0901f7
 int id actions 0x7f090044
 int id activity_chooser_view_content 0x7f090045
 int id add 0x7f090046
@@ -3237,6 +3240,7 @@ int id honorRequest 0x7f0900d5
 int id horizontal_only 0x7f0900d6
 int id icon 0x7f0900d7
 int id icon_group 0x7f0900d8
+int id iconplane 0x7f0901f5
 int id ifRoom 0x7f0900d9
 int id ignore 0x7f0900da
 int id ignoreRequest 0x7f0900db
@@ -3497,6 +3501,7 @@ int id transition_transform 0x7f0901d9
 int id triangle 0x7f0901da
 int id tv_deskripsi 0x7f0901db
 int id tv_judul 0x7f0901dc
+int id tvicon 0x7f0901f6
 int id unchecked 0x7f0901dd
 int id uniform 0x7f0901de
 int id unlabeled 0x7f0901df
@@ -3714,6 +3719,7 @@ int layout select_dialog_item_material 0x7f0c0069
 int layout select_dialog_multichoice_material 0x7f0c006a
 int layout select_dialog_singlechoice_material 0x7f0c006b
 int layout support_simple_spinner_dropdown_item 0x7f0c006c
+int menu actionmenu 0x7f0e0001
 int menu bottomnavmenu 0x7f0e0000
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001

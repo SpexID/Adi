@@ -3,7 +3,12 @@ package com.example.adi
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -66,4 +71,23 @@ private fun setfragment(fragment: Fragment) =
         rv_list_tour.adapter=itemadapter(list)
     }
 
+    fun Onclick(view: View) {
+        findViewById<ImageView>(R.id.iconplane).animate().apply {
+            duration = 1000
+            translationY(-2000f)
+        }.start()
+        findViewById<TextView>(R.id.tvicon).setText("Whoosh!")
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.actionmenu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.actionbarmenu->Toast.makeText(this, "hai",Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
